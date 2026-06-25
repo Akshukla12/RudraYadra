@@ -1,0 +1,200 @@
+/* knowledge.css - The Sacred Elements Layout */
+
+.knowledge-page {
+  background-color: var(--color-bg-light);
+  padding-top: var(--nav-h);
+}
+
+.knowledge-header {
+  padding: var(--space-12) 20px var(--space-20);
+  background-color: var(--color-bg-light);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.knowledge-header-inner {
+  max-width: var(--max-w-content);
+  margin: 0 auto;
+}
+
+.knowledge-title {
+  font-size: var(--fs-3xl);
+  color: var(--color-olive);
+  line-height: 1.1;
+  max-width: 500px;
+  margin-bottom: var(--space-8);
+}
+
+.knowledge-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-8);
+}
+
+.knowledge-intro p {
+  max-width: 480px;
+  margin: 0;
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+
+.knowledge-intro .est-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-clay);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .knowledge-title {
+    font-size: 2.5rem;
+  }
+  .knowledge-intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* --- Grid Section --- */
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-16) var(--space-6);
+  max-width: var(--max-w-content);
+  margin: 0 auto;
+  padding: var(--space-20) 20px;
+}
+
+@media (max-width: 1024px) {
+  .elements-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-12) var(--space-6);
+  }
+}
+
+@media (max-width: 640px) {
+  .elements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.element-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.element-image-wrap {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  margin-bottom: var(--space-4);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.element-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.element-card:hover .element-image-wrap img {
+  transform: scale(1.05);
+}
+
+.element-pill {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-olive-dark);
+}
+
+.element-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-3);
+}
+
+.element-head h3 {
+  font-size: 1.5rem;
+  color: var(--color-olive-dark);
+  margin: 0;
+}
+
+.element-deity {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-clay);
+}
+
+.element-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  flex-grow: 1;
+}
+
+/* --- CTA Section --- */
+.alignment-cta {
+  background-color: var(--color-bg-alt);
+  padding: var(--space-24) 20px;
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.alignment-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.leaf-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-clay);
+  margin-bottom: var(--space-4);
+}
+
+.alignment-cta h2 {
+  font-size: 2.25rem;
+  margin-bottom: var(--space-4);
+  color: var(--color-olive-dark);
+}
+
+.alignment-cta p {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-8);
+}
+
+.btn-consult {
+  background-color: var(--color-olive);
+  color: var(--color-white);
+  padding: 0 var(--space-8);
+  height: 48px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-consult:hover {
+  background-color: var(--color-olive-dark);
+  transform: translateY(-2px);
+}

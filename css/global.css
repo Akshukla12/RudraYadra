@@ -1,0 +1,211 @@
+/* global.css - Rudra Yatra Air/Nature Theme */
+
+:root {
+  /* --- Color Palette (Serene Nature) --- */
+  --color-olive: #4a5543;      /* Deep Olive / Greens */
+  --color-olive-dark: #374131;
+  --color-olive-light: #7c8b71;
+  
+  --color-clay: #c5a278;       /* Earthy Orange/Clay (for subtle accents, like mala tassel) */
+  --color-sand: #d1b896; 
+  
+  --color-bg-light: #faf8f5;   /* Very light beige/off-white */
+  --color-bg-alt: #f4f0eb;     /* Slightly darker section bg */
+  
+  --color-text-dark: #282d26;  /* Almost black, soft olive tone */
+  --color-text-muted: #6b7266; /* Grey text */
+  --color-white: #ffffff;
+
+  /* --- Semantic Tokens --- */
+  --text-primary: var(--color-text-dark);
+  --text-secondary: var(--color-text-muted);
+  --text-on-dark: var(--color-white);
+  --bg-page: var(--color-bg-light);
+  --bg-surface: var(--color-white);
+
+  --border-subtle: rgba(40, 45, 38, 0.08);
+
+  /* --- Typography Scale --- */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Lato', sans-serif;
+
+  --fs-xs: 0.75rem;     /* 12px */
+  --fs-sm: 0.875rem;    /* 14px */
+  --fs-base: 1rem;      /* 16px */
+  --fs-md: 1.125rem;    /* 18px */
+  --fs-lg: 1.5rem;      /* 24px */
+  --fs-xl: 2rem;        /* 32px */
+  --fs-2xl: 2.75rem;    /* 44px */
+  --fs-3xl: 3.5rem;     /* 56px */
+  --fs-display: clamp(3rem, 6vw, 4.5rem);
+
+  /* --- Spacing Scale --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 120px;
+  --space-32: 160px;
+  --space-40: 200px;
+
+  /* --- Radius & Motion --- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* --- Layout --- */
+  --nav-h: 76px;
+  --max-w-content: 1200px;
+  --max-w-copy: 650px;
+  
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(40,45,38,0.03);
+  --shadow-md: 0 8px 30px rgba(40,45,38,0.06);
+}
+
+/* --- Base Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Typography System --- */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+  font-weight: 400; /* Use normal weight for elegant serif */
+  line-height: 1.15;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: var(--fs-3xl); margin-bottom: var(--space-6); }
+h2 { font-size: var(--fs-2xl); margin-bottom: var(--space-4); }
+h3 { font-size: var(--fs-xl); margin-bottom: var(--space-3); }
+
+p {
+  margin-bottom: var(--space-6);
+  color: var(--text-secondary);
+  font-size: var(--fs-base);
+  line-height: 1.8;
+}
+p:last-child { margin-bottom: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Layout Utilities --- */
+.section { padding: var(--space-40) 20px; }
+@media (max-width: 768px) { .section { padding: var(--space-20) 16px; } }
+
+.container { max-width: var(--max-w-content); margin: 0 auto; }
+.container-sm { max-width: 800px; margin: 0 auto; }
+.container-copy { max-width: var(--max-w-copy); margin: 0 auto; }
+
+.text-center { text-align: center; }
+
+/* --- Component Utilities --- */
+.eyebrow {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+  opacity: 0.6;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-8);
+  height: 52px;
+  border-radius: var(--radius-full); /* Pill shape */
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary {
+  background-color: var(--color-olive);
+  color: var(--color-white);
+}
+.btn-primary:hover { background-color: var(--color-olive-dark); }
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--text-primary);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+.btn-secondary:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Animations --- */
+.fade-in { animation: fadeIn 800ms var(--transition) forwards; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Floating WhatsApp Button */
+.floating-wa {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  z-index: 9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.floating-wa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+@media (max-width: 768px) {
+  .floating-wa { width: 50px; height: 50px; bottom: 20px; right: 20px; }
+  .floating-wa svg { width: 24px; height: 24px; }
+}

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudra Yatra | Divine Energy</title>
+  <meta name="description" content="Begin your spiritual journey with Rudra Yatra. Discover authentic Rudraksha beads hand-selected from the sacred Arun Valley, Nepal, and get personalized Vedic guidance.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="css/pages/mukhi.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rudra: {
+              bg: '#2f3e2e',
+              text: '#e6e0c8',
+              subtext: '#a8b29a',
+              accent: '#c9a85d',
+              divider: '#4a5a45',
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Lato', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav scrolled" id="siteNav" data-permanent-fixed="true">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Rudra Yatra</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="rudraksha.html">Rudraksha</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions" style="display: flex; gap: 16px; align-items: center;">
+        <a href="https://www.instagram.com/rudrayatrabyanviramraj?igsh=NWQ4amtwZWNtZ2Vn&utm_source=qr" target="_blank"
+          rel="noopener" aria-label="Instagram"
+          style="color: inherit; text-decoration: none; transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0.8;"
+          onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1';"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='0.8';">
+          <i class="ri-instagram-line" style="font-size: 1.35rem;"></i>
+        </a>
+        <a href="https://youtube.com/@rudrayatrabyanviramraj?si=tXKTHn8f3vFe_LxF" target="_blank" rel="noopener"
+          aria-label="YouTube"
+          style="color: inherit; text-decoration: none; transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0.8;"
+          onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1';"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='0.8';">
+          <i class="ri-youtube-line" style="font-size: 1.35rem;"></i>
+        </a>
+        <a href="https://www.facebook.com/Rudrayatra1317/" target="_blank" rel="noopener" aria-label="Facebook"
+          style="color: inherit; text-decoration: none; transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0.8;"
+          onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1';"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='0.8';">
+          <i class="ri-facebook-circle-line" style="font-size: 1.35rem;"></i>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Phase 1: Hero Section -->
+  <section id="hero" class="hero fade-in">
+    <div class="hero-inner" style="justify-content: center; text-align: center; width: 100%;">
+      <div class="hero-content"
+        style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+
+        <div class="hero-bilingual-subtitle"
+          style="font-size: 0.85rem; font-family: var(--font-sans); color: #E6D8B5; letter-spacing: 0.15em; margin-bottom: 25px; font-weight: 600; padding: 6px 20px; background-color: rgba(40, 45, 38, 0.8); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 100px; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+          पवित्र अरुण वैली की दिव्य ऊर्जा
+        </div>
+
+        <h1 class="hero-title"
+          style="color: #F8F5EE; text-align: center; line-height: 1.05; margin-bottom: 30px; text-shadow: 0 2px 10px rgba(0,0,0,0.4);">
+          <span
+            style="font-family: var(--font-serif); font-size: clamp(3rem, 6vw, 4.8rem); font-weight: 600; display: block; letter-spacing: -0.02em;">Divine
+            Energy from</span>
+          <span
+            style="font-family: var(--font-serif); font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 600; display: block; margin: -5px 0;">the</span>
+          <span
+            style="font-family: var(--font-serif); font-size: clamp(3.5rem, 7vw, 5.2rem); font-weight: 400; font-style: italic; color: #F5E6C8; display: block; letter-spacing: -0.01em;">Sacred
+            Arun Valley</span>
+        </h1>
+
+        <!-- Premium Source Badge -->
+        <div class="hero-source-badge">
+          <span>Naturally Sourced</span>
+          <span class="bullet">&bull;</span>
+          <span>Arun Valley, Nepal</span>
+        </div>
+
+        <p class="hero-desc"
+          style="color: #F8F5EE; text-align: center; max-width: 500px; font-size: 1.1rem; line-height: 1.6; margin-bottom: 40px; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+          Embark on a spiritual pilgrimage through our curated collection of authentic Rudraksha beads, harvested with
+          reverence from the world's most sacred altitude.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="rudraksha.html" class="hero-btn primary">
+            Begin Your Rudra Yatra
+          </a>
+          <button id="scrollToConsult" class="hero-btn secondary">
+            Get Personal Guidance
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 2: Brand Philosophy + Founder Trust -->
+  <section id="philosophy" class="philosophy-section text-center fade-in">
+    <div class="container-copy">
+      <h2 class="philosophy-text font-serif" style="font-style: italic; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.5; color: var(--color-olive-dark);">
+        "विश्वास और भाव से रुद्राक्ष देते हैं — उसे धारण करिए, और शिव आपमें वास करेंगे।"
+      </h2>
+      <div style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--color-olive-light); margin-top: 16px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700;">
+        — राम राज आर्य
+      </div>
+    </div>
+  </section>
+
+  <section id="founder" class="founder-section text-center fade-in">
+    <!-- Emotional Divider -->
+    <div class="sacred-divider">
+      <div class="line"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 20A7 7 0 0 1 14 6h7v7a7 7 0 0 1-7 7h-3Z" />
+        <path d="M14 20a7 7 0 0 0 7-7" />
+        <path d="M11 20a7 7 0 0 0 7-7" />
+        <path d="m14 20-7-7" />
+        <path d="M4 10a3 3 0 0 1 3-3h3v3a3 3 0 0 1-3 3H4v-3Z" />
+        <path d="M2 10a3 3 0 0 1 3-3h3v3a3 3 0 0 1-3 3H2v-3Z" />
+        <path d="m5 10-3-3" />
+        <path d="M7 10a3 3 0 0 0-3 3v3h3a3 3 0 0 0 3-3v-3Z" />
+      </svg>
+      <div class="line"></div>
+    </div>
+
+    <div class="container-copy">
+      <!-- subtle quote visual -->
+      <i class="ri-double-quotes-l journey-icon" style="font-size: 32px;"></i>
+
+      <div class="founder-quote">
+        "True spirituality is found in the silence between breaths. Our mission is to provide the ancient tools that
+        help you hear that silence more clearly."
+      </div>
+
+      <div class="founder-blessing">
+        May you find your sacred anchor.
+      </div>
+
+      <div class="founder-visual"></div> <!-- Red thread visual -->
+
+      <div class="founder-signature">Ram Raj Arya</div>
+      <div class="founder-title">Founder, Rudra Yatra</div>
+    </div>
+  </section>
+
+  <!-- Phase 3: Sacred Journey Process -->
+  <section id="journey" class="journey-section text-center">
+    <div class="container fade-in">
+      <div class="collection-eyebrow" style="margin-bottom: var(--space-4); line-height: 1.4;">
+        <span style="display: block; font-family: var(--font-sans); text-transform: none; letter-spacing: 0.05em; font-size: 0.95em; font-weight: 500; opacity: 0.85; margin-bottom: 2px;">हमारी प्रक्रिया</span>
+        <span style="display: block;">Our Process</span>
+      </div>
+      <h2 class="font-serif" style="margin-bottom: var(--space-4); line-height: 1.25;">
+        <span style="display: block; font-size: 1.6rem; color: var(--color-olive-light); font-weight: 400; margin-bottom: 6px;">पवित्र यात्रा</span>
+        <span style="display: block;">The Sacred Passage</span>
+      </h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 6px; font-size: 1.05rem; line-height: 1.5;">
+        उत्पत्ति से धारण तक, हमारी 5-चरणीय पवित्र प्रक्रिया रुद्राक्ष की मूल ऊर्जा को सीधे आपके जीवन मार्ग से जोड़ती है।
+      </p>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto var(--space-8); font-size: 0.95rem; line-height: 1.5; opacity: 0.85;">
+        From source to wearer, our 5-step sacred process connects the pure energy of Rudraksha directly to your path.
+      </p>
+
+      <div class="timeline-container">
+        <!-- Connecting Line -->
+        <div class="timeline-line"></div>
+
+        <!-- Step 1 -->
+        <div class="timeline-step">
+          <div class="step-circle">1</div>
+          <div class="timeline-step-text">
+            <h4 class="font-serif" style="line-height: 1.25; margin-bottom: 8px;">
+              <span style="display: block; font-size: 1.35rem; font-weight: 600; color: var(--color-olive-dark); margin-bottom: 2px;">चयन</span>
+              <span style="display: block; font-size: 0.85rem; font-weight: 400; font-style: italic; color: var(--color-text-muted); letter-spacing: 0.05em;">Selection</span>
+            </h4>
+            <p style="margin-bottom: 4px; font-size: 0.95rem; line-height: 1.4; color: var(--text-secondary);">परिपक्व अवस्था में हाथों से चयनित।</p>
+            <p style="font-size: 0.82rem; line-height: 1.4; color: var(--text-secondary); opacity: 0.75;">Hand-picked at maturity for perfect symmetry and geometry.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step">
+          <div class="step-circle">2</div>
+          <div class="timeline-step-text">
+            <h4 class="font-serif" style="line-height: 1.25; margin-bottom: 8px;">
+              <span style="display: block; font-size: 1.35rem; font-weight: 600; color: var(--color-olive-dark); margin-bottom: 2px;">शुद्धिकरण</span>
+              <span style="display: block; font-size: 0.85rem; font-weight: 400; font-style: italic; color: var(--color-text-muted); letter-spacing: 0.05em;">Preparation</span>
+            </h4>
+            <p style="margin-bottom: 4px; font-size: 0.95rem; line-height: 1.4; color: var(--text-secondary);">पंचामृत द्वारा शुद्धिकरण।</p>
+            <p style="font-size: 0.82rem; line-height: 1.4; color: var(--text-secondary); opacity: 0.75;">Cleansed using five sacred nectars (Panchamrit).</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step">
+          <div class="step-circle">3</div>
+          <div class="timeline-step-text">
+            <h4 class="font-serif" style="line-height: 1.25; margin-bottom: 8px;">
+              <span style="display: block; font-size: 1.35rem; font-weight: 600; color: var(--color-olive-dark); margin-bottom: 2px;">ऊर्जीकरण</span>
+              <span style="display: block; font-size: 0.85rem; font-weight: 400; font-style: italic; color: var(--color-text-muted); letter-spacing: 0.05em;">Energization</span>
+            </h4>
+            <p style="margin-bottom: 4px; font-size: 0.95rem; line-height: 1.4; color: var(--text-secondary);">वैदिक विधि से प्राण प्रतिष्ठित।</p>
+            <p style="font-size: 0.82rem; line-height: 1.4; color: var(--text-secondary); opacity: 0.75;">Consecrated by Vedic scholars via Prana Pratishtha.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-step">
+          <div class="step-circle">4</div>
+          <div class="timeline-step-text">
+            <h4 class="font-serif" style="line-height: 1.25; margin-bottom: 8px;">
+              <span style="display: block; font-size: 1.35rem; font-weight: 600; color: var(--color-olive-dark); margin-bottom: 2px;">धारण</span>
+              <span style="display: block; font-size: 0.85rem; font-weight: 400; font-style: italic; color: var(--color-text-muted); letter-spacing: 0.05em;">Wearing</span>
+            </h4>
+            <p style="margin-bottom: 4px; font-size: 0.95rem; line-height: 1.4; color: var(--text-secondary);">मुहूर्त और मंत्रों के अनुसार धारण।</p>
+            <p style="font-size: 0.82rem; line-height: 1.4; color: var(--text-secondary); opacity: 0.75;">Guided matching of Muhurta and precise Mantras.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-step">
+          <div class="step-circle">5</div>
+          <div class="timeline-step-text">
+            <h4 class="font-serif" style="line-height: 1.25; margin-bottom: 8px;">
+              <span style="display: block; font-size: 1.35rem; font-weight: 600; color: var(--color-olive-dark); margin-bottom: 2px;">परिणाम</span>
+              <span style="display: block; font-size: 0.85rem; font-weight: 400; font-style: italic; color: var(--color-text-muted); letter-spacing: 0.05em;">Result</span>
+            </h4>
+            <p style="margin-bottom: 4px; font-size: 0.95rem; line-height: 1.4; color: var(--text-secondary);">संतुलन, स्पष्टता और शांति।</p>
+            <p style="font-size: 0.82rem; line-height: 1.4; color: var(--text-secondary); opacity: 0.75;">Electromagnetic balance, clarity, and deep peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 4: Sacred Rudraksha Types -->
+  <section id="collection-preview" class="section collection-section">
+    <div class="container">
+      <div class="collection-head fade-in">
+        <div>
+          <div class="collection-eyebrow">Rudraksha Guidance</div>
+          <h2 class="font-serif">Sacred Rudraksha Types</h2>
+        </div>
+        <a href="rudraksha.html" class="link-underline">View All Types</a>
+      </div>
+
+      <div class="collection-grid-4">
+
+        <!-- Card 1: 5 Mukhi -->
+        <a href="rudraksha/rudra-5.html" class="premium-card fade-in" data-delay="100ms">
+          <div class="card-image-wrap">
+            <img src="images/rudra5.webp" alt="5 Mukhi Rudraksha">
+          </div>
+          <div class="premium-card-content">
+            <div class="deity-tag">Kalagni Rudra</div>
+            <h3 class="font-serif">5 Mukhi Rudraksha</h3>
+            <p>For peace, health, and profound physical and mental balance.</p>
+            <span class="explore-cta">Explore <i class="ri-arrow-right-line arrow-icon"></i></span>
+          </div>
+        </a>
+
+        <!-- Card 2: 7 Mukhi -->
+        <a href="rudraksha/rudra-7.html" class="premium-card fade-in" data-delay="200ms">
+          <div class="card-image-wrap">
+            <img src="images/rudra7.webp" alt="7 Mukhi Rudraksha">
+          </div>
+          <div class="premium-card-content">
+            <div class="deity-tag">Goddess Lakshmi</div>
+            <h3 class="font-serif">7 Mukhi Rudraksha</h3>
+            <p>Invites financial abundance, prosperity, and dissolves obstacles.</p>
+            <span class="explore-cta">Explore <i class="ri-arrow-right-line arrow-icon"></i></span>
+          </div>
+        </a>
+
+        <!-- Card 3: 9 Mukhi -->
+        <a href="rudraksha/rudra-9.html" class="premium-card fade-in" data-delay="300ms">
+          <div class="card-image-wrap">
+            <img src="images/rudra9.webp" alt="9 Mukhi Rudraksha">
+          </div>
+          <div class="premium-card-content">
+            <div class="deity-tag">Goddess Durga</div>
+            <h3 class="font-serif">9 Mukhi Rudraksha</h3>
+            <p>Bestows supreme bravery, fearlessness, and dynamic female energy.</p>
+            <span class="explore-cta">Explore <i class="ri-arrow-right-line arrow-icon"></i></span>
+          </div>
+        </a>
+
+        <!-- Card 4: Rudra Kavach -->
+        <a href="contact.html" class="premium-card fade-in" data-delay="400ms">
+          <div class="card-image-wrap">
+            <img src="images/product_rudraksha.webp" alt="Rudra Kavach">
+          </div>
+          <div class="premium-card-content">
+            <div class="deity-tag">Shiva Shield</div>
+            <h3 class="font-serif">Rudra Kavach</h3>
+            <p>A multi-mukhi combination engineered for absolute aura protection.</p>
+            <span class="explore-cta">Explore <i class="ri-arrow-right-line arrow-icon"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 5: Why Seekers Come -->
+  <section id="why-seekers" class="why-seekers-section text-center">
+    <div class="container fade-in">
+      <div class="collection-eyebrow" style="margin-bottom: var(--space-4);">Intentions</div>
+      <h2 class="font-serif" style="margin-bottom: var(--space-4);">Why Seekers Come to Us</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto var(--space-12);">
+        Every soul is searching for exactly what it needs. Ancient wisdom maps specific Mukhis to these life alignments.
+      </p>
+
+      <div class="intent-grid">
+        <!-- Card 1: Peace -->
+        <div class="intent-card fade-in" data-delay="100ms">
+          <div class="intent-icon"><i class="ri-moon-clear-line"></i></div>
+          <h4 class="font-serif">Inner Peace</h4>
+          <div class="intent-hindi">मानसिक शांति</div>
+        </div>
+
+        <!-- Card 2: Protection -->
+        <div class="intent-card fade-in" data-delay="200ms">
+          <div class="intent-icon"><i class="ri-shield-star-line"></i></div>
+          <h4 class="font-serif">Protection</h4>
+          <div class="intent-hindi">नकारात्मकता से बचाव</div>
+        </div>
+
+        <!-- Card 3: Prosperity -->
+        <div class="intent-card fade-in" data-delay="300ms">
+          <div class="intent-icon"><i class="ri-sparkling-fill"></i></div>
+          <h4 class="font-serif">Prosperity</h4>
+          <div class="intent-hindi">सुख एवं समृद्धि</div>
+        </div>
+
+        <!-- Card 4: Rahu/Shani -->
+        <div class="intent-card fade-in" data-delay="400ms">
+          <div class="intent-icon"><i class="ri-planet-line"></i></div>
+          <h4 class="font-serif">Rahu / Shani</h4>
+          <div class="intent-hindi">ग्रह निवारण</div>
+        </div>
+
+        <!-- Card 5: Spiritual Growth -->
+        <div class="intent-card fade-in" data-delay="500ms">
+          <div class="intent-icon"><i class="ri-leaf-line"></i></div>
+          <h4 class="font-serif">Spiritual Growth</h4>
+          <div class="intent-hindi">आध्यात्मिक उन्नति</div>
+        </div>
+
+        <!-- Card 6: Family Harmony -->
+        <div class="intent-card fade-in" data-delay="600ms">
+          <div class="intent-icon"><i class="ri-team-line"></i></div>
+          <h4 class="font-serif">Family Harmony</h4>
+          <div class="intent-hindi">पारिवारिक सौहार्द</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Premium Spiritual Footer -->
+    <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid-three">
+        
+        <!-- Column 1: Brand Identity -->
+        <div class="footer-col brand-column" id="consultation-cta">
+          <div class="trident-icon-wrap">
+            <svg class="trident-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M5 8a7 7 0 0 0 14 0M12 2l-2 2.5M12 2l2 2.5M5 8V6.5M19 8V6.5" />
+            </svg>
+          </div>
+          <h2 class="footer-brand-title">RUDRA YATRA</h2>
+          <div class="brand-separator">
+            <div class="line"></div>
+            <div class="diamond"></div>
+            <div class="line"></div>
+          </div>
+          <p class="brand-description-serif">
+            A sacred journey.<br>A divine connection.
+          </p>
+          <a href="https://wa.me/9129054883" target="_blank" rel="noopener" class="footer-wa-btn-outline">
+            <i class="ri-whatsapp-line"></i> Get Guidance on WhatsApp
+          </a>
+        </div>
+
+        <!-- Column 2: Explore -->
+        <div class="footer-col explore-column">
+          <h4 class="footer-col-title-sans">EXPLORE</h4>
+          <div class="footer-col-title-line"></div>
+          <ul class="footer-links-arrows-redesigned">
+            <li><a href="index.html"><span class="arrow-symbol">&rarr;</span>Home</a></li>
+            <li><a href="rudraksha.html"><span class="arrow-symbol">&rarr;</span>Rudraksha</a></li>
+            <li><a href="about.html"><span class="arrow-symbol">&rarr;</span>About</a></li>
+            <li><a href="contact.html"><span class="arrow-symbol">&rarr;</span>Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Connect -->
+        <div class="footer-col connect-column">
+          <h4 class="footer-col-title-sans">CONNECT</h4>
+          <div class="footer-col-title-line"></div>
+          <div class="social-circles">
+            <a href="https://instagram.com/rudrayatra" target="_blank" rel="noopener" class="social-circle-link" aria-label="Instagram">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://youtube.com/rudrayatra" target="_blank" rel="noopener" class="social-circle-link" aria-label="YouTube">
+              <i class="ri-youtube-line"></i>
+            </a>
+            <a href="https://wa.me/9129054883" target="_blank" rel="noopener" class="social-circle-link" aria-label="WhatsApp">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+          </div>
+          <a href="https://wa.me/9129054883?text=I%20need%20guidance%20about%20Rudraksha%20from%20Rudra%20Yatra." target="_blank" rel="noopener" class="footer-wa-guidance-link-gold">
+            <i class="ri-whatsapp-line"></i> Get guidance on WhatsApp &rarr;
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom-redesigned">
+      <div class="bottom-bar-line-container">
+        <div class="bottom-bar-line"></div>
+        <div class="lotus-badge">
+          <svg class="lotus-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3c-1.2 2.5-3.5 6-3.5 9 0 2 1.5 3.5 3.5 3.5s3.5-1.5 3.5-3.5c0-3-2.3-6.5-3.5-9Z" />
+            <path d="M12 8c-2.5 1-5 3.5-5 6.5 0 1.5 1 2.5 2.5 2.5 2 0 4-1.5 5-4" />
+            <path d="M12 8c2.5 1 5 3.5 5 6.5 0 1.5-1 2.5-2.5 2.5-2 0-4-1.5-5-4" />
+            <path d="M12 12c-3.5.5-6.5 2.5-6.5 5 0 1.2.8 2 2 2 2.5 0 5-1.8 6.5-4.2" />
+            <path d="M12 12c3.5.5 6.5 2.5 6.5 5 0 1.2-.8 2-2 2 2.5 0-5-1.8-6.5-4.2" />
+          </svg>
+        </div>
+      </div>
+      <div class="footer-bottom-inner-redesigned">
+        <div class="footer-bottom-left">
+          <span>&copy; 2025 Rudra Yatra. All rights reserved.</span>
+        </div>
+        <div class="footer-bottom-center">
+          <span class="sacred-forests-line">From the sacred forests of Nepal to your soul.</span>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="#">Privacy Policy</a>
+          <span class="bar-separator">|</span>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Sticky Mobile WhatsApp Bar -->
+  <div class="sticky-wa-bar" id="stickyWaBar">
+    <a href="https://wa.me/9129054883?text=I%20need%20Rudraksha%20guidance." target="_blank" rel="noopener"
+      class="sticky-wa-link">
+      <i class="ri-whatsapp-fill" style="font-size: 20px;"></i>
+      Get Guidance on WhatsApp
+    </a>
+    <button class="sticky-close" id="stickyClose" aria-label="Close">✕</button>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script>
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          // Unobserve to run animation only once
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    // Initial style setup before observing
+    document.querySelectorAll('.fade-in').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      const delay = el.dataset.delay || '0s';
+      el.style.transition = `opacity 0.8s ease-out ${delay}, transform 0.8s ease-out ${delay}`;
+      observer.observe(el);
+    });
+
+    // Make nav sticky on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('siteNav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Sticky WA bar dismiss logic
+    const bar = document.getElementById('stickyWaBar');
+    const closeBtn = document.getElementById('stickyClose');
+    if (sessionStorage.getItem('wa_bar_closed') === '1') {
+      if (bar) bar.style.display = 'none';
+      document.body.style.paddingBottom = '0';
+    }
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        if (bar) bar.style.display = 'none';
+        document.body.style.paddingBottom = '0';
+        sessionStorage.setItem('wa_bar_closed', '1');
+      });
+    }
+  </script>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/9129054883?text=I%20need%20guidance%20about%20Rudraksha%20from%20Rudra%20Yatra."
+    class="floating-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="ri-whatsapp-fill" style="font-size: 28px;"></i>
+  </a>
+</body>
+
+</html>

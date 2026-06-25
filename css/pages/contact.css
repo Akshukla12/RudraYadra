@@ -1,0 +1,215 @@
+/* contact.css - The Spiritual Consultation Form Setup */
+
+.contact-page {
+  background-color: var(--color-bg-light);
+}
+
+/* --- Consultation Hero Setup --- */
+.consultation-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - var(--nav-h));
+  margin-top: var(--nav-h);
+  background-color: var(--color-bg-light);
+}
+
+@media (max-width: 1024px) {
+  .consultation-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}
+
+.consultation-visual {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .consultation-visual {
+    height: 60vh;
+  }
+}
+
+.consultation-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visual-quote {
+  position: absolute;
+  bottom: var(--space-8);
+  left: var(--space-8);
+  color: var(--color-white);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  opacity: 0.9;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  max-width: 80%;
+}
+
+.consultation-form-wrapper {
+  background-color: var(--color-white);
+  padding: var(--space-16) 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .consultation-form-wrapper {
+    padding: var(--space-12) 20px;
+  }
+}
+
+.consultation-form-wrapper h1 {
+  font-size: 3.5rem;
+  color: var(--color-olive-dark);
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
+}
+
+.consultation-form-wrapper > p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-12);
+  line-height: 1.6;
+  max-width: 440px;
+}
+
+/* Form Styles */
+.yatra-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+@media (max-width: 640px) {
+  .form-row-2 {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-block label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  opacity: 0.8;
+  margin-bottom: var(--space-2);
+}
+
+.input-block input,
+.input-block textarea {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgba(40, 45, 38, 0.15);
+  padding: var(--space-2) 0;
+  border-radius: 0; /* Override iOS styling */
+  transition: border-color var(--transition);
+}
+
+.input-block input:focus,
+.input-block textarea:focus {
+  outline: none;
+  border-bottom-color: var(--color-olive-dark);
+}
+
+.input-block textarea {
+  resize: none;
+}
+
+.form-footer-line {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+  height: 1px;
+  background-color: var(--border-subtle);
+}
+
+.form-contact-alt {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--color-olive-dark);
+  opacity: 0.8;
+}
+
+.form-contact-alt span {
+  color: var(--color-clay); /* Make whatsapp number clay */
+}
+
+.btn-form-submit {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+  background-color: var(--color-olive);
+  color: var(--color-white);
+  border: none;
+  padding: 0 var(--space-8);
+  height: 48px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-form-submit:hover {
+  background-color: var(--color-olive-dark);
+  transform: translateY(-2px);
+}
+
+/* --- Statement Section --- */
+.statement-section {
+  padding: var(--space-32) 20px;
+  text-align: center;
+  background-color: var(--color-bg-alt);
+}
+
+.statement-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.statement-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-clay);
+  margin: 0 auto var(--space-8);
+}
+
+.statement-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 2.25rem;
+  line-height: 1.4;
+  color: var(--color-olive-dark);
+  margin-bottom: var(--space-8);
+}
+
+.statement-line {
+  width: 40px;
+  height: 1px;
+  background-color: var(--border-subtle);
+  margin: 0 auto;
+}

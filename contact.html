@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Rudra Yatra Spiritual Guidance</title>
+  <meta name="description"
+    content="Contact our Vedic guides on WhatsApp for personalized Rudraksha recommendations based on your current life challenges.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages/mukhi.css"> <!-- Reusing mukhi.css for trust layer styling -->
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rudra: {
+              bg: '#2f3e2e',
+              text: '#e6e0c8',
+              subtext: '#a8b29a',
+              accent: '#c9a85d',
+              divider: '#4a5a45',
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Lato', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .contact-hero {
+      padding: 160px 20px 60px;
+      text-align: center;
+      background: linear-gradient(to bottom, rgba(250, 248, 245, 0.92) 0%, rgba(250, 248, 245, 0.6) 100%), url('images/heropage.png') center center/cover no-repeat;
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    .contact-hero h1 {
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      margin-bottom: 8px;
+      color: var(--color-olive-dark);
+    }
+
+    .contact-hindi {
+      font-size: 1.1rem;
+      color: var(--color-olive-light);
+      font-weight: 500;
+      font-family: var(--font-sans);
+      margin-bottom: 40px;
+    }
+
+    .main-cta-wrapper {
+      max-width: 600px;
+      margin: 0 auto 80px;
+      text-align: center;
+    }
+
+    .btn-massive-wa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--color-olive-dark);
+      color: var(--color-white);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 24px 60px;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(74, 85, 67, 0.25);
+    }
+
+    .btn-massive-wa:hover {
+      background: var(--color-clay);
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(160, 128, 74, 0.3);
+    }
+
+    .guidance-box {
+      max-width: 700px;
+      margin: 0 auto 60px;
+      background: var(--color-white);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 50px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .guidance-box h2 {
+      font-family: var(--font-serif);
+      color: var(--color-olive-dark);
+      margin-bottom: 24px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .guidance-steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .guidance-step {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 24px;
+      gap: 16px;
+    }
+
+    .step-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: var(--color-bg-light);
+      border: 1px solid var(--color-olive-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-olive-dark);
+    }
+
+    .step-content h4 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--color-olive-dark);
+      margin-bottom: 4px;
+    }
+
+    .step-content p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .trust-footer-note {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--color-olive-dark);
+      font-weight: 600;
+      background: var(--color-bg-light);
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      margin: 0 10px 10px;
+    }
+
+    .secondary-contact {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--color-bg-light);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .contact-link:hover {
+      color: var(--color-olive-dark);
+    }
+
+    @media (max-width: 768px) {
+      .btn-massive-wa {
+        padding: 20px 40px;
+        font-size: 1.1rem;
+        width: 100%;
+      }
+
+      .guidance-box {
+        padding: 30px 20px;
+      }
+
+      .contact-links {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body class="contact-page">
+
+          <!-- Navigation -->
+  <nav class="site-nav scrolled" id="siteNav" data-permanent-fixed="true">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Rudra Yatra</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rudraksha.html">Rudraksha</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions" style="display: flex; gap: 16px; align-items: center;">
+        <a href="https://www.instagram.com/rudrayatrabyanviramraj?igsh=NWQ4amtwZWNtZ2Vn&utm_source=qr" target="_blank"
+          rel="noopener" aria-label="Instagram"
+          style="color: inherit; text-decoration: none; transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0.8;"
+          onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1';"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='0.8';">
+          <i class="ri-instagram-line" style="font-size: 1.35rem;"></i>
+        </a>
+        <a href="https://youtube.com/@rudrayatrabyanviramraj?si=tXKTHn8f3vFe_LxF" target="_blank" rel="noopener"
+          aria-label="YouTube"
+          style="color: inherit; text-decoration: none; transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0.8;"
+          onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1';"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='0.8';">
+          <i class="ri-youtube-line" style="font-size: 1.35rem;"></i>
+        </a>
+        <a href="https://www.facebook.com/Rudrayatra1317/" target="_blank" rel="noopener" aria-label="Facebook"
+          style="color: inherit; text-decoration: none; transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0.8;"
+          onmouseover="this.style.transform='scale(1.15)'; this.style.opacity='1';"
+          onmouseout="this.style.transform='scale(1)'; this.style.opacity='0.8';">
+          <i class="ri-facebook-circle-line" style="font-size: 1.35rem;"></i>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="contact-hero fade-in">
+      <div class="container">
+        <h1 class="font-serif">Contact Us</h1>
+        <p class="contact-hindi">हमसे संपर्क करें</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+
+        <!-- PRIMARY CTA - WhatsApp Dominates -->
+        <div class="main-cta-wrapper fade-in" data-delay="50ms">
+          <a href="https://wa.me/9129054883?text=I%20want%20Rudraksha%20guidance." target="_blank" rel="noopener"
+            class="btn-massive-wa">
+            <i class="ri-whatsapp-fill"></i>
+            Chat on WhatsApp
+          </a>
+          <p style="margin-top:16px; color:var(--text-secondary); font-size:0.9rem;">
+            Average response time: <strong>Within 2 hours</strong>
+          </p>
+        </div>
+
+        <!-- USER GUIDANCE SECTION -->
+        <div class="guidance-box fade-in" data-delay="150ms">
+          <h2>What to include in your message</h2>
+          <p style="text-align:center; color:var(--text-secondary); margin-bottom:40px;">To help us recommend the
+            precise Mukhi for you, please send us a message containing:</p>
+
+          <ul class="guidance-steps">
+            <li class="guidance-step">
+              <div class="step-icon"><i class="ri-alert-circle-line"></i></div>
+              <div class="step-content">
+                <h4>Your Primary Problem</h4>
+                <p>Tell us exactly what challenge you are facing (e.g., financial blockages, severe anxiety, career
+                  stagnation, or specific health ailments).</p>
+              </div>
+            </li>
+            <li class="guidance-step">
+              <div class="step-icon"><i class="ri-history-line"></i></div>
+              <div class="step-content">
+                <h4>Age & General Situation</h4>
+                <p>Your current age and professional/life stage helps us align the energetic intensity of the bead
+                  perfectly to your needs.</p>
+              </div>
+            </li>
+            <li class="guidance-step">
+              <div class="step-icon"><i class="ri-star-line"></i></div>
+              <div class="step-content">
+                <h4>Astrological Concern (Optional)</h4>
+                <p>If you have been advised by an astrologer about a specific ruling planet affliction (like Sade Sati
+                  or a weak Sun), please mention it.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="trust-footer-note">
+            <div class="trust-badge">
+              <i class="ri-shield-check-line"></i> Your information is private
+            </div>
+            <div class="trust-badge">
+              <i class="ri-user-check-line"></i> Guidance is personalized
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OPTIONAL CONTACT INFO SECTION -->
+    <section class="secondary-contact fade-in" data-delay="250ms">
+      <div class="container">
+        <div class="hero-eyebrow">Other Means</div>
+        <h3 class="font-serif" style="color:var(--color-olive-dark); font-size:1.5rem; margin-bottom:10px;">Alternative
+          Contact</h3>
+        <p style="color:var(--text-secondary); max-width:500px; margin:0 auto;">For bulk inquiries, press, or those
+          seeking email communication instead of WhatsApp.</p>
+
+        <div class="contact-links">
+          <a href="mailto:guidance@rudrayatra.com" class="contact-link">
+            <i class="ri-mail-line"></i> guidance@rudrayatra.com
+          </a>
+          <a href="#" class="contact-link" rel="noopener">
+            <i class="ri-instagram-line"></i> @RudraYatra
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Premium Spiritual Footer -->
+    <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid-three">
+        
+        <!-- Column 1: Brand Identity -->
+        <div class="footer-col brand-column" id="consultation-cta">
+          <div class="trident-icon-wrap">
+            <svg class="trident-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M5 8a7 7 0 0 0 14 0M12 2l-2 2.5M12 2l2 2.5M5 8V6.5M19 8V6.5" />
+            </svg>
+          </div>
+          <h2 class="footer-brand-title">RUDRA YATRA</h2>
+          <div class="brand-separator">
+            <div class="line"></div>
+            <div class="diamond"></div>
+            <div class="line"></div>
+          </div>
+          <p class="brand-description-serif">
+            A sacred journey.<br>A divine connection.
+          </p>
+          <a href="https://wa.me/9129054883" target="_blank" rel="noopener" class="footer-wa-btn-outline">
+            <i class="ri-whatsapp-line"></i> Get Guidance on WhatsApp
+          </a>
+        </div>
+
+        <!-- Column 2: Explore -->
+        <div class="footer-col explore-column">
+          <h4 class="footer-col-title-sans">EXPLORE</h4>
+          <div class="footer-col-title-line"></div>
+          <ul class="footer-links-arrows-redesigned">
+            <li><a href="index.html"><span class="arrow-symbol">&rarr;</span>Home</a></li>
+            <li><a href="rudraksha.html"><span class="arrow-symbol">&rarr;</span>Rudraksha</a></li>
+            <li><a href="about.html"><span class="arrow-symbol">&rarr;</span>About</a></li>
+            <li><a href="contact.html"><span class="arrow-symbol">&rarr;</span>Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Connect -->
+        <div class="footer-col connect-column">
+          <h4 class="footer-col-title-sans">CONNECT</h4>
+          <div class="footer-col-title-line"></div>
+          <div class="social-circles">
+            <a href="https://instagram.com/rudrayatra" target="_blank" rel="noopener" class="social-circle-link" aria-label="Instagram">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://youtube.com/rudrayatra" target="_blank" rel="noopener" class="social-circle-link" aria-label="YouTube">
+              <i class="ri-youtube-line"></i>
+            </a>
+            <a href="https://wa.me/9129054883" target="_blank" rel="noopener" class="social-circle-link" aria-label="WhatsApp">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+          </div>
+          <a href="https://wa.me/9129054883?text=I%20need%20guidance%20about%20Rudraksha%20from%20Rudra%20Yatra." target="_blank" rel="noopener" class="footer-wa-guidance-link-gold">
+            <i class="ri-whatsapp-line"></i> Get guidance on WhatsApp &rarr;
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom-redesigned">
+      <div class="bottom-bar-line-container">
+        <div class="bottom-bar-line"></div>
+        <div class="lotus-badge">
+          <svg class="lotus-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3c-1.2 2.5-3.5 6-3.5 9 0 2 1.5 3.5 3.5 3.5s3.5-1.5 3.5-3.5c0-3-2.3-6.5-3.5-9Z" />
+            <path d="M12 8c-2.5 1-5 3.5-5 6.5 0 1.5 1 2.5 2.5 2.5 2 0 4-1.5 5-4" />
+            <path d="M12 8c2.5 1 5 3.5 5 6.5 0 1.5-1 2.5-2.5 2.5-2 0-4-1.5-5-4" />
+            <path d="M12 12c-3.5.5-6.5 2.5-6.5 5 0 1.2.8 2 2 2 2.5 0 5-1.8 6.5-4.2" />
+            <path d="M12 12c3.5.5 6.5 2.5 6.5 5 0 1.2-.8 2-2 2 2.5 0-5-1.8-6.5-4.2" />
+          </svg>
+        </div>
+      </div>
+      <div class="footer-bottom-inner-redesigned">
+        <div class="footer-bottom-left">
+          <span>&copy; 2025 Rudra Yatra. All rights reserved.</span>
+        </div>
+        <div class="footer-bottom-center">
+          <span class="sacred-forests-line">From the sacred forests of Nepal to your soul.</span>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="#">Privacy Policy</a>
+          <span class="bar-separator">|</span>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/9129054883?text=I%20want%20Rudraksha%20guidance." class="floating-wa" target="_blank"
+    rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="ri-whatsapp-fill" style="font-size: 28px;"></i>
+  </a>
+
+  <!-- Sticky Mobile WhatsApp Bar -->
+  <div class="sticky-wa-bar" id="stickyWaBar">
+    <a href="https://wa.me/9129054883?text=I%20want%20Rudraksha%20guidance." target="_blank" rel="noopener"
+      class="sticky-wa-link">
+      <i class="ri-whatsapp-fill" style="font-size: 20px;"></i>
+      Get Guidance on WhatsApp
+    </a>
+    <button class="sticky-close" id="stickyClose" aria-label="Close">✕</button>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script>
+
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      const delay = el.dataset.delay || '0ms';
+      el.style.transition = `opacity 0.7s ease-out ${delay}, transform 0.7s ease-out ${delay}`;
+      observer.observe(el);
+    });
+
+    // Sticky WA bar dismiss logic
+    const bar = document.getElementById('stickyWaBar');
+    const closeBtn = document.getElementById('stickyClose');
+    if (sessionStorage.getItem('wa_bar_closed') === '1') {
+      if (bar) bar.style.display = 'none';
+      document.body.style.paddingBottom = '0';
+    }
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        if (bar) bar.style.display = 'none';
+        document.body.style.paddingBottom = '0';
+        sessionStorage.setItem('wa_bar_closed', '1');
+      });
+    }
+  </script>
+</body>
+
+</html>
