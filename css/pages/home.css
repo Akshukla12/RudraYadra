@@ -3,15 +3,15 @@
 /* --- Hero Section --- */
 .hero {
   position: relative;
-  min-height: calc(112vh - var(--nav-h));
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 40px;
   background: 
-    linear-gradient(to bottom, rgba(25, 30, 23, 0.55) 0%, rgba(25, 30, 23, 0.4) 50%, rgba(25, 30, 23, 0.6) 100%),
-    linear-gradient(to top, rgba(250, 248, 245, 0.4) 0%, rgba(250, 248, 245, 0) 30%),
-    url('../../images/heropage.png') top center/cover no-repeat;
+    linear-gradient(to bottom, rgba(25, 30, 23, 0.3) 0%, rgba(25, 30, 23, 0.15) 50%, rgba(25, 30, 23, 0.35) 100%),
+    linear-gradient(to top, rgba(250, 248, 245, 0.2) 0%, rgba(250, 248, 245, 0) 30%),
+    url('../../images/heropage.png') center center/cover no-repeat;
   image-rendering: auto;
 }
 
