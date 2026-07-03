@@ -45,7 +45,7 @@
   bottom: -16px;
   /* Light radial gradient in the center to highlight text readability, layered on the clear image */
   background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.2) 100%),
-    url('../../images/aboutpage-arun.jpg') center/cover no-repeat;
+    url('../../images/aboutpage_bg.jpg') center/cover no-repeat;
   filter: blur(0.5px) brightness(0.8);
   z-index: 1;
   pointer-events: none;
