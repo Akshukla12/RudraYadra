@@ -59,10 +59,13 @@
 }
 
 .nav-logo {
-    height: 72px;
+    height: 90px; /* Increased height to make emblem larger */
     width: auto;
     object-fit: contain;
     display: block;
+    clip-path: inset(0 0 25% 0); /* Crops out duplicate bottom text, simplifying it into a monogram */
+    margin-bottom: -22px; /* Offsets the cropped transparent space at bottom */
+    margin-top: -6px; /* Vertically centers the remaining emblem in the navbar */
 }
 
 .nav-links {

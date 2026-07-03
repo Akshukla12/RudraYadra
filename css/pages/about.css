@@ -26,14 +26,14 @@
 /* --- Hero Quote Section --- */
 .about-hero-sacred {
   position: relative;
-  min-height: 60vh;
+  min-height: 92vh; /* Increased from 85vh for extra breathing room */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--space-12) 20px;
+  padding: var(--space-24) 20px;
   overflow: hidden;
-  border-bottom: 2px solid var(--color-gold);
 }
 
 .about-hero-sacred::before {
@@ -43,48 +43,127 @@
   left: -16px;
   right: -16px;
   bottom: -16px;
-  /* Light radial gradient in the center to highlight text readability, layered on the clear image */
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.2) 100%),
+  /* Forest-green gradient overlay to improve text readability and contrast */
+  background: linear-gradient(180deg, rgba(18, 38, 30, 0.35), rgba(18, 38, 30, 0.55)),
     url('../../images/aboutpage_bg.jpg') center/cover no-repeat;
   filter: blur(0.5px) brightness(0.8);
   z-index: 1;
   pointer-events: none;
 }
 
+.about-hero-sacred::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px; /* Shortened to 50px for a very subtle, almost invisible transition */
+  background: linear-gradient(to bottom, rgba(250, 248, 245, 0) 0%, rgba(250, 248, 245, 0.3) 50%, var(--color-cream) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
 .hero-quote-container {
   position: relative;
   max-width: 800px;
-  margin: 0 auto;
+  margin: -45px auto 0; /* Shifts the centered block upward by 45px for better visual balance */
   z-index: 5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-6);
+  gap: 56px; /* Increased spacing to 56px to give a premium editorial breathing room */
   padding: 10px;
   background: transparent;
 }
 
+.hero-quote-eyebrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 0; /* Let container gap handle layout spacing */
+}
+
+.hero-quote-eyebrow .eyebrow-english {
+  font-family: var(--font-sans);
+  font-size: clamp(0.75rem, 1.3vw, 0.85rem);
+  color: #C9A15B; /* Antique Gold */
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-quote-eyebrow .eyebrow-hindi {
+  font-family: var(--font-serif);
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  color: var(--color-cream);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  opacity: 0.85;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
 .hero-quote-sanskrit {
   font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 4vw, 2.75rem);
-  color: var(--color-forest-dark);
+  font-size: clamp(1.65rem, 3.7vw, 2.55rem); /* Reduced by 7% for a more refined, luxury aesthetic */
+  color: var(--color-cream);
   line-height: 1.45;
   font-weight: 500;
   letter-spacing: -0.01em;
-  max-width: 720px;
-  margin: 0 auto;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+  max-width: 650px; /* Reduced to 650px to prevent edge-to-edge stretching and wrap elegantly */
+  margin: 0; /* Let container gap handle layout spacing */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-quote-attribution-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0; /* Let container gap handle layout spacing */
 }
 
 .hero-quote-attribution {
   font-family: var(--font-sans);
-  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
-  color: var(--color-saffron);
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: #C9A15B; /* Antique Gold */
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-weight: 600;
   opacity: 0.95;
-  margin-top: 4px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-quote-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(0.75rem, 1.3vw, 0.85rem); /* Slightly increased size for sentence-case visibility */
+  color: var(--color-cream);
+  letter-spacing: 0.05em; /* Subtle letter-spacing for luxury feel */
+  font-weight: 500;
+  opacity: 0.75;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Tablet & Mobile Hero Optimizations */
+@media (max-width: 768px) {
+  .about-hero-sacred {
+    min-height: 82vh; /* Scaled up proportionally */
+    padding: var(--space-16) 16px;
+  }
+  .hero-quote-container {
+    gap: 40px; /* Proportionally scaled gap for tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-sacred {
+    min-height: 78vh; /* Scaled up proportionally */
+    padding: var(--space-12) 12px;
+  }
+  .hero-quote-container {
+    gap: 28px; /* Proportionally scaled gap for mobile */
+  }
 }
 
 /* --- Opening Prose Section --- */
