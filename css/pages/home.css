@@ -422,24 +422,6 @@
 }
 
 /* --- Phase 2: Brand Philosophy & Founder --- */
-.philosophy-section {
-  background-color: var(--color-bg-alt);
-  padding: var(--space-16) 20px var(--space-6);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.philosophy-text {
-  font-size: 2.25rem;
-  color: var(--color-olive-dark);
-  margin: 0;
-  line-height: 1.4;
-}
-
-@media (max-width: 768px) {
-  .philosophy-text {
-    font-size: 1.75rem;
-  }
-}
 
 .founder-section {
   padding: var(--space-6) 20px var(--space-12);
@@ -467,50 +449,87 @@
   height: 24px;
 }
 
-.founder-quote {
+.founder-message-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-4) 0;
+}
+
+.founder-quote-hindi {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   line-height: 1.6;
-  color: var(--text-primary);
-  margin-bottom: var(--space-8);
-}
-
-@media (max-width: 768px) {
-  .founder-quote {
-    font-size: 1.25rem;
-  }
-}
-
-.founder-blessing {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: var(--space-8);
-}
-
-.founder-visual {
-  width: 40px;
-  height: 2px;
-  background-color: #d84339;
-  /* Sacred red thread */
-  margin: 0 auto var(--space-6);
-  border-radius: 2px;
-}
-
-.founder-signature {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-style: italic;
   color: var(--color-olive-dark);
+  margin-bottom: var(--space-6);
+  font-weight: 500;
+  text-align: center;
 }
 
-.founder-title {
-  font-size: 0.75rem;
+.founder-quote-english {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: var(--space-10);
+  opacity: 0.9;
+  text-align: center;
+}
+
+.founder-message-attribution {
+  margin-top: var(--space-8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.founder-profile {
+  text-align: center;
+}
+
+.attribution-divider {
+  width: 1px;
+  height: 32px;
+  background-color: rgba(212, 175, 55, 0.3);
+}
+
+.founder-signature-sans {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  color: var(--color-olive-light);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.founder-title-gold {
+  font-size: 0.8rem;
   letter-spacing: 0.15em;
   color: var(--color-clay);
   text-transform: uppercase;
-  margin-top: 4px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .founder-message-attribution {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .attribution-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .founder-quote-hindi {
+    font-size: 1.65rem;
+  }
+  .founder-quote-english {
+    font-size: 1.05rem;
+  }
 }
 
 

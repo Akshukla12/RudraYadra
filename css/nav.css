@@ -53,6 +53,16 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-logo {
+    height: 72px;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .nav-links {

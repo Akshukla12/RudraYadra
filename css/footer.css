@@ -51,18 +51,26 @@
   align-items: center;
 }
 
-.trident-icon-wrap {
-  margin-bottom: 16px;
-  color: #D4AF37;
-  /* Luxury Gold */
+.footer-logo-wrap {
+  margin-top: -20px;
+  margin-bottom: -45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* Soft gold glow behind the logo */
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0) 70%);
+  /* Apply drop-shadow filters on the parent so they are not cut off by the child's clip-path */
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 12px rgba(212, 175, 55, 0.3));
 }
 
-.trident-svg {
-  width: 42px;
-  height: 42px;
-  stroke-width: 1.5;
-  stroke: #D4AF37;
-  filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.3));
+.site-footer .footer-logo {
+  height: 220px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  /* Clean inset clip to hide the duplicate dark text at the bottom of the logo image */
+  clip-path: inset(0 0 12% 0);
 }
 
 .footer-brand-title {
@@ -99,6 +107,7 @@
 }
 
 .brand-description-serif {
+  display: none;
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.05rem;
@@ -149,7 +158,7 @@
   width: 24px;
   height: 1px;
   background-color: #D4AF37;
-  margin: 0 auto 16px;
+  margin: 0 auto 12px;
   opacity: 0.7;
 }
 
@@ -205,7 +214,8 @@
   display: flex;
   justify-content: center;
   gap: 18px;
-  margin-bottom: 16px;
+  margin-top: 4px;
+  margin-bottom: 12px;
 }
 
 .social-circle-link {
@@ -241,6 +251,7 @@
   text-decoration: none;
   transition: all 0.3s ease;
   letter-spacing: 0.02em;
+  margin-top: 8px;
 }
 
 .footer-wa-guidance-link-gold:hover {
