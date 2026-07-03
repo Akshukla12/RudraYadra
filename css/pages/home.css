@@ -544,7 +544,7 @@
   justify-content: space-between;
   align-items: stretch; /* Stretches cards to uniform height */
   position: relative;
-  max-width: 1050px;
+  max-width: 1250px;
   margin: 0 auto;
   gap: 20px; /* Equal spacing between steps */
 }
@@ -688,6 +688,17 @@
   opacity: 1;
   transform: translateY(0);
   transition-delay: 1.4s;
+}
+
+/* Step 6 (homepage only) */
+.timeline-container.active .timeline-step:nth-child(7) .step-circle {
+  transform: scale(1);
+  transition-delay: 1.6s;
+}
+.timeline-container.active .timeline-step:nth-child(7) .timeline-step-text {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.7s;
 }
 
 /* Mobile Layout: Stack timeline vertically */
