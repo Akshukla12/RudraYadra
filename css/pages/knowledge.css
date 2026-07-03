@@ -167,7 +167,7 @@
 }
 
 .alignment-cta h2 {
-  font-size: 2.25rem;
+  font-size: clamp(1.6rem, 5.5vw, 2.25rem); /* Responsive font sizing */
   margin-bottom: var(--space-4);
   color: var(--color-olive-dark);
 }

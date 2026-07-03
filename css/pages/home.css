@@ -154,13 +154,68 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 88vh !important; /* Set mobile hero height within 85-90vh */
+    background: 
+      linear-gradient(to bottom, rgba(25, 30, 23, 0.3) 0%, rgba(25, 30, 23, 0.15) 50%, rgba(25, 30, 23, 0.35) 100%),
+      linear-gradient(to top, rgba(250, 248, 245, 0.2) 0%, rgba(250, 248, 245, 0) 30%),
+      url('../../images/heropage.png') 68% center/cover no-repeat !important; /* Mobile crop: shifted right to center peaks and seeker */
+  }
+
   .hero-inner {
-    padding: var(--space-12) 20px;
+    padding: var(--space-16) 20px !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 90% !important; /* Keep width limited to 90% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px !important; /* Generous equal spacing between subtitle, heading, badge, description, and CTA */
+  }
+
+  .hero-bilingual-subtitle {
+    margin: 0 !important;
+  }
+
+  .hero-title {
+    margin: 0 !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Reduce heading sizes by ~18% on mobile devices to prevent wrapping issues */
+  .hero-title span:nth-child(1) {
+    font-size: clamp(2.45rem, 5vw, 4rem) !important;
+  }
+
+  .hero-title span:nth-child(2) {
+    font-size: clamp(1.8rem, 3.3vw, 2.6rem) !important;
+  }
+
+  .hero-title span:nth-child(3) {
+    font-size: clamp(2.85rem, 5.8vw, 4.25rem) !important;
+  }
+
+  .hero-source-badge {
+    margin: 0 !important;
+  }
+
+  .hero-desc {
+    margin: 0 !important;
+    font-size: 1rem !important;
+    max-width: 90% !important;
   }
 
   .hero-buttons {
+    margin: 0 !important;
     flex-direction: column;
     align-items: center;
+    gap: 16px !important;
   }
 
   .hero-btn {

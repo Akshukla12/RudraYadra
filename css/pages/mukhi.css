@@ -311,6 +311,7 @@
 @media (max-width: 768px) {
   .wear-grid { grid-template-columns: 1fr 1fr; }
   .trust-grid { grid-template-columns: 1fr; }
+  .guidance-grid { grid-template-columns: 1fr !important; gap: 24px !important; } /* Mobile grid layout for guidance note */
   .guidance-card { padding: 24px 20px; }
   .filter-bar { gap: 8px; }
   .filter-btn { font-size: 0.8rem; padding: 7px 14px; }
@@ -749,8 +750,8 @@
   .mukhi-page .cta-section {
     padding-top: var(--section-pad-y-mobile) !important;
     padding-bottom: var(--section-pad-y-mobile) !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 20px !important; /* Maintained 20-24px side padding constraint */
+    padding-right: 20px !important;
   }
   .mukhi-page section .container > .text-center,
   .mukhi-page section > .container > .text-center {

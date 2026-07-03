@@ -8,6 +8,18 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
 });
 
+// Dynamically inject social links into mobile drawer on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+  const navActions = document.querySelector('.nav-actions');
+  const navLinksContainer = document.querySelector('.nav-links');
+  if (navActions && navLinksContainer && !navLinksContainer.querySelector('.mobile-socials-wrapper')) {
+    const mobileSocials = document.createElement('li');
+    mobileSocials.className = 'mobile-socials-wrapper';
+    mobileSocials.innerHTML = navActions.innerHTML;
+    navLinksContainer.appendChild(mobileSocials);
+  }
+});
+
 // Close menu on outside click
 document.addEventListener('click', (e) => {
   if (!nav.contains(e.target)) {

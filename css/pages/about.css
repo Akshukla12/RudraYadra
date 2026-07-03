@@ -154,6 +154,38 @@
   .hero-quote-container {
     gap: 40px; /* Proportionally scaled gap for tablet */
   }
+
+  .opening-section {
+    padding: var(--space-8) 20px !important;
+  }
+
+  .opening-blockquote {
+    padding: var(--space-6) var(--space-4) !important; /* Fixed padding on mobile to prevent horizontal overflow */
+    margin: var(--space-8) auto !important;
+  }
+
+  .journey-arun {
+    padding: 48px 20px !important;
+  }
+
+  .journey-features-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* 2x2 grid layout to prevent text squishing */
+    gap: var(--space-6) !important;
+    max-width: 100% !important;
+  }
+
+  .journey-feature-item {
+    padding: 0 !important;
+  }
+
+  .journey-feature-item:not(:last-child)::after {
+    display: none !important; /* Remove desktop vertical dividers on mobile grid */
+  }
+
+  .team-section-wrapper {
+    padding: var(--space-8) 20px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -163,6 +195,10 @@
   }
   .hero-quote-container {
     gap: 28px; /* Proportionally scaled gap for mobile */
+  }
+  .journey-features-row {
+    grid-template-columns: 1fr !important; /* 1 column on extremely narrow mobile viewports */
+    gap: var(--space-6) !important;
   }
 }
 
