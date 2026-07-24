@@ -59,19 +59,20 @@
 }
 
 .nav-logo {
-    height: 90px; /* Increased height to make emblem larger */
+    height: 80px;
     width: auto;
     object-fit: contain;
     display: block;
-    clip-path: inset(0 0 25% 0); /* Crops out duplicate bottom text, simplifying it into a monogram */
-    margin-bottom: -22px; /* Offsets the cropped transparent space at bottom */
-    margin-top: -6px; /* Vertically centers the remaining emblem in the navbar */
+    clip-path: inset(0 0 32% 0); /* Crops out duplicate bottom text, simplifying it into a monogram */
+    margin-bottom: -25px; /* Offsets the cropped transparent space at bottom */
+    margin-top: -3px; /* Vertically centers the remaining emblem in the navbar */
 }
 
 .nav-links {
     display: flex;
     gap: 24px;
     list-style: none;
+    align-items: center; /* Ensures links are vertically centered in the navbar */
 }
 
 @media (max-width: 1024px) {
@@ -172,12 +173,12 @@
     }
 
     .nav-logo {
-        height: 50px; /* 37.5px visible monogram */
+        height: 60px; /* 40.8px visible monogram */
         width: auto;
         object-fit: contain;
-        clip-path: inset(0 0 25% 0);
-        margin-bottom: -12px;
-        margin-top: -3px;
+        clip-path: inset(0 0 32% 0); /* Crops out duplicate bottom text, simplifying it into a monogram */
+        margin-bottom: -19px; /* Offsets the cropped space at bottom */
+        margin-top: -2px; /* Vertically centers the remaining emblem */
     }
 
     .nav-actions {
