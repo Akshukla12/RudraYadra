@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const rudraCards = document.querySelectorAll('.rudra-card');
+  const rudraCards = document.querySelectorAll('#mukhi-grid .rudra-card');
 
   if (!filterBtns.length || !rudraCards.length) return;
 
